@@ -1,0 +1,67 @@
+<!--DOCTYPE html-->
+
+<html lang ="en" dir="ltr">
+
+    <head>
+        <title> Submit </title>
+        <link rel = "stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Forum&family=Style+Script&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body> 
+        		<div class = "navbar">
+			<nav>
+				<a href="index.html"> Home </a>
+				<a href="submit.html">Submit</a>
+				<a>Read</a>
+				<a>Masthead</a>
+				<a>About</a>
+			</nav>
+		</div>
+        <div class="title">
+            <h1>SUBMIT</h1>
+        </div>
+        <!--
+        <div class = "intro"> 
+            <div class = "Lbox"> </div>
+            <div class = center-content> <p> We are accepting ALL submissions! We love to see your work.</p> </div>
+            <div class = "Rbox"> </div>
+        </div>
+    -->
+        <div class = "form">
+            <script src="script.js"></script>
+            <form id="submissionForm">
+                <h1>We are accepting ALL submissions! We love to see your work.</h1>
+
+                <input type="text" id="name" placeholder="Full Name" required />
+                <input type="email" id="email" placeholder="Preferred Email" required />
+                <input type="number" id="age" placeholder="Age" required />
+                <input type="text" id="school" placeholder="Schools/Institutions Attended" required />
+                <input type="text" id="country" placeholder="Country" required />
+
+                <fieldset>
+                    <legend>Genre:</legend>
+                    <label><input type="radio" name="genres" value="Fiction"> Fiction</label><br>
+                    <label><input type="radio" name="genres" value="Nonfiction"> Nonfiction</label><br>
+                    <label><input type="radio" name="genres" value="Poetry"> Poetry</label>
+                </fieldset>
+
+                <input type="text" id="title" placeholder="Title of Piece" required />
+                <textarea id="description" placeholder="Description of Work (Few Sentences)" required></textarea>
+                <textarea id="work" placeholder="Your Piece" required></textarea>
+                <input type="text" id="instagram" placeholder="Instagram @ (Optional: if you want to be tagged)" />
+                <textarea id="biography" placeholder="Short Third-Person Bio (50 words or less)" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+        </div>
+        
+    </body>
+
+
+</html>
+
