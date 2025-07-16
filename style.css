@@ -26,17 +26,18 @@ body {
 	background-color: #faf3f0;
 	height: 5vw;
 	margin: 0vw;
+	z-index: 20;
 }
 
 .navbar nav {
  	display: flex;
 	justify-content: space-evenly;
-	font-size: 1.5vw;
+	font-size: 1.75vw;
 	align-items: center;
 	width: 90em;
 	margin-left: 7vw;
 	margin-right: 7vw;
-	font-family: serif;
+	font-family: "Forum", serif;
 	color:#232a48;
 
 }
@@ -46,7 +47,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	font-size: 4.5vw;
+	font-size: 3.5vw;
 	background-color: white;
 	font-family: "Style Script", cursive;
   	font-weight: 400;
@@ -55,7 +56,6 @@ body {
 	height: 12vw;
 	
 }
-
 .intro {
   display: flex;
   justify-content: space-between;
@@ -66,6 +66,7 @@ body {
   width: 100vw;
   color:#232a48;
   background-color: #dae8ef;
+  position: relative;
 }
 
 .center-content {
@@ -85,6 +86,7 @@ body {
 
 .center-content p {
 	font-size: 2vw;
+	size: 10%;
 }
 
 .intro .Lbox, .Rbox{
@@ -93,8 +95,19 @@ body {
   background-color: #232a48;
 }
 
+.intro .flower1{
+	display: block;
+	pointer-events: none;
+	position: absolute;
+	height: 100%;
+	left: 3.5vw;
+	z-index: 10;
+
+
+}
+
 .submit_outer {
-	height: 10vw;
+	height: 8vw;
 	display: flex;
 	background-color: #ffe7df;
 	align-items: center;
@@ -104,7 +117,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 7vw;
+	height: 5vw;
 	width: 95vw;
 	outline: #dae8ef;
 	outline-width: 0.5vw;
@@ -112,7 +125,7 @@ body {
 	font-family: "Style Script", cursive;
   	font-weight: 400;
 	font-style: normal;
-	font-size: 5vw;
+	font-size: 3.5vw;
 	background-color:#faf3f0;
 	color: #232a48;
 }
@@ -150,7 +163,7 @@ form h1 {
 	
 }
 
-.text {
+form text {
 	width: 20vw;
-
+	padding: 10vw;
 }
