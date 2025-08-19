@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Saints and Fleurs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/fleur.png" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Style+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class = "submit_page">
+     <!--NAVBAR-->
+  <div class="navbar">
+    <a href="index.html" class="fleur-home">
+        <img src="images/fleur.png" alt="Home" />
+    </a>
+    <nav>
+      <div class="nav-links">
+          <a href="submit.html">submit</a>
+          <a href="read.html">read</a>
+          <a href="masthead.html">masthead</a>
+          <a href="about.html">about</a>
+      </div>
+    </nav>
+  </div>
+
+  <div class="form-title scroll-reveal">
+    <h1>SUBMIT</h1>
+  </div>
+
+  <div class="form scroll-reveal">
+    <form id="submissionForm">
+    <div class = "form-inner">
+      <h1>INSTRUCTIONS:</h1>
+      <h3>
+        We welcome submissions for Literature (Fiction, Nonfiction, and Poetry) 
+        and Art (Cover Art with runner-up submissions as Featured Art).
+        <br>
+        <br>
+        Literature Submissions:
+        <br>
+        Literature submission cycles are six weeks long (currently 7/15-9/30).
+         We select 10-15 pieces of Fiction, Nonfiction, and Poetry based on insight,
+          commentary, and quality. We encourage artistic liberty and authentic thinking!
+        <br>
+        <br>
+        Art Submissions:
+        <br>
+        Art submission cycles last two weeks (next open for the Issue 2 Cover from 10/1 - 10/14).
+        We select an art piece to be featured on the cover of the issue. It will appear permanently
+         on the website and several others throughout the magazine.
+         <br>
+        <br>
+        Contact us for questions!
+        </h3>
+        <h1>SUBMIT TO ISSUE 2</h1>
+        <h3>
+        We are currently accepting submissions for Poetry, Fiction, and Nonfiction works
+         2000 words or less. This cycle's submission deadline is September 30th, 2025 at 
+         11:59 P.M. Pacific Standard Time. 
+        </h3>
+
+      <input type="text" id="name" placeholder="Full Name" required />
+      <input type="email" id="email" placeholder="Preferred Email" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <input type="text" id="school" placeholder="School/Institution" required />
+      <input type="text" id="country" placeholder="Country" required />
+
+      <fieldset>
+        <legend>Genre:</legend>
+        <label><input type="radio" name="genre" value="Fiction" /> Fiction</label><br />
+        <label><input type="radio" name="genre" value="Nonfiction" /> Nonfiction</label><br />
+        <label><input type="radio" name="genre" value="Poetry" /> Poetry</label>
+      </fieldset>
+
+      <input type="text" id="title" placeholder="Title of Piece" required />
+      <legend>Work Here:</legend>
+      <div id="work" contenteditable="true" class="rich-editor" data-placeholder="Work Here" required></div>
+      <input type="text" id="instagram" placeholder="Instagram @ (Optional)" />
+      <textarea id="biography" placeholder="Short Third-Person Bio (50 words or less)" required></textarea>
+
+      <button type="submit">Submit</button>
+    </div>
+    </form>
+</div>
+  <div class = "footer">
+    <div class = "footer_links">
+      <a href = "https://www.instagram.com/saintsandfleurs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> instagram</a>
+      <a href="mailto:saintsandfleurs@gmail.com">email</a>
+      <a href="https://linktr.ee/saintsandfleurs">linktree</a>
+    </div>
+  </div>
+
+</body>
+</html>
