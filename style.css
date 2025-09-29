@@ -1,0 +1,1225 @@
+
+
+/* =======================
+   GLOBAL STYLES
+======================= */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+
+/* =======================
+   HOME PAGE
+======================= */
+
+/* --- Cloud Background Wrapper --- */
+.top {
+  background-image: url(images/cloud_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+}
+
+
+
+
+/* --- Navbar Container --- */
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4vw;
+  padding-top: 1vw;
+  width: 95vw;
+  backdrop-filter: blur(4px);
+  z-index: 20;
+}
+
+/* --- Navbar Links Wrapper --- */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 90vw;
+  margin: 0 auto;
+  font-size: 1.5vw;
+  font-family: "Forum", serif;
+  font-weight: bold;
+  color: #232a48;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+/* --- Standard Links --- */
+.nav-links a {
+  text-decoration: underline;
+  color: #232a48;
+  text-shadow: 0.25vw 0.25vw 0.25vw rgba(255, 255, 255, 0.45);
+  white-space: nowrap;
+}
+/* Hide dropdown component on desktop, show classic nav */
+.nav-dropdown { display: none; }
+
+/* --- Home Icon --- */
+.fleur-home {
+  display: flex;
+  padding-left: 1vw;
+}
+
+.fleur-home img {
+  width: 5vw;
+  height: 5vw;
+  transition: transform 0.3s ease;
+}
+
+.fleur-home img:hover {
+  transform: scale(1.1);
+}
+
+
+/* =======================
+   DROPDOWN (SUBMIT MENU)
+======================= */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Forum", serif;
+  font-size: 1.5vw;
+  color: #232a48;
+  text-decoration: underline;
+  font-weight: bold;
+  padding: 0.5vw 1vw;
+  text-shadow: 0.25vw 0.25vw 0.25vw rgba(255, 255, 255, 0.45);
+}
+
+/* --- Dropdown menu hidden by default --- */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #faf3f0;
+  border: 1px solid #ccc;
+  border-radius: 0.5vw;
+  min-width: 12vw;
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+}
+
+/* --- Dropdown links --- */
+.dropdown-content a {
+  font-family: "Forum", serif;
+  font-size: 1.2vw;
+  color: #232a48;
+  text-decoration: none;
+  padding: 0.6vw 1vw;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #e6e6e6;
+  text-decoration: underline;
+}
+
+/* --- Show dropdown on hover --- */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* =======================
+   FOOTER
+======================= */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8d7dc;
+  width: 100vw;
+  height: 10vw;
+}
+
+.footer_links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
+}
+
+.footer a {
+  margin: 0 auto;
+  font-size: 1.5vw;
+  font-family: "Forum", serif;
+  font-weight: bold;
+  color: #232a48;
+  text-decoration: underline;
+}
+
+
+/* =======================
+   TITLE BANNER + INTRO
+======================= */
+.title_text {
+  display: -moz-stack;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.title img {
+  height: 23vw;
+  width: 23vw;
+  padding-top: 2vw;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 40vw;
+  color: #232a48;
+  padding: 2vw;
+  animation: fadeInUp 1s ease-out;
+}
+
+.center-content h1 {
+  font-size: 10vw;
+  font-family: "Forum", serif;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.1;
+  margin: 0;
+  white-space: normal;
+  display: block;
+}
+
+.center-content p {
+  font-size: 2vw;
+  font-style: italic;
+}
+
+.center-content h5 {
+  font-size: 2vw;
+  padding: 0;
+}
+
+
+/* =======================
+   ANNOUNCEMENTS
+======================= */
+.announcements {
+  text-align: left;
+  color: #232a48;
+  padding: 5vw 2vw;
+  background-image: url(images/blue-hydrangea-white-background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.announcements h1 {
+  padding-left: 7vw;
+  font-size: 4vw;
+  margin-bottom: 3vw;
+  text-shadow: 1vw 1vw 1.5vw #d8d7dc;
+}
+
+.announcement_content {
+  padding-left: 7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  width: 20vw;
+  padding: 1vw;
+  border-radius: 1vw;
+  box-shadow: 0 0.5vw 1vw #d8d7dc;
+}
+
+.event img {
+  width: 20vw;
+  border-radius: 1vw;
+}
+
+/* =======================
+   FEATURED WORK
+======================= */
+.features {
+  text-align: right;
+  color: #232a48;
+  background-image: url(images/writing_aesthetic.jfif); /* background-color:#d8d7dc; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5vw 2vw;
+}
+
+.features h1 {
+  color: white;
+  padding-right: 7vw;
+  font-size: 4vw;
+  margin-bottom: 3vw;
+  text-shadow: 1vw 1vw 1.5vw #232a48;
+}
+
+.features_content {
+  padding-right: 7vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  width: 20vw;
+  height: auto;
+  padding: 1vw;
+  border-radius: 1vw;
+  box-shadow: 0 0.5vw 1vw #d8d7dc;
+}
+
+.work img {
+  width: 20vw;
+  border-radius: 1vw;
+}
+
+
+/* =======================
+   SUBMIT CTA BANNER
+======================= */
+.submit_outer {
+  height: 8vw;
+  width: 100vw;
+  display: flex;
+  background-color: #d8d7dc;
+  align-items: center;
+  justify-content: center;
+}
+
+.submit_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5vw;
+  width: 95vw;
+  /* outline: 0.5vw solid #232a48; */
+  font-size: 3vw;
+  font-style: italic;
+  background-color: #faf3f0;
+  color: #232a48;
+}
+
+
+/* =======================
+   SUBMIT PAGE
+======================= */
+
+/* --- Backgrounds --- */
+.submit_top {
+  background-image: url(images/pink_sky.jpg);
+  background-position: bottom;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(4px);
+  width: 100vw;
+  height: 50vw;
+}
+/* =======================
+   SUBMIT PAGE – Main Card
+======================= */
+/* --- Submit Main --- */
+.submit_main {
+  box-sizing: border-box;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  color: #232a48;
+}
+
+/* --- Headings --- */
+.submit_main h1 {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  font-size: 3.2vw;
+  color: #232a48;
+}
+
+.submit_main h2 {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 1.25rem 0 0.5rem 0;
+  font-size: 2.4vw;
+  color: #232a48;
+}
+
+/* --- Body Copy --- */
+.submit_main h3 {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  line-height: 1.65;
+  margin: 0 0 2rem 0;
+  font-size: 1.35vw;
+  color: #232a48;
+}
+
+/* tighter pairing under section headers */
+.submit_main h1 + h3 {
+  margin-top: 0.25rem;
+}
+
+/* --- Links --- */
+.submit_main a {
+  color: #232a48;
+  text-decoration-color: rgba(35, 42, 72, 0.35);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.2s ease, opacity 0.2s ease;
+}
+
+.submit_main a:hover {
+  text-decoration-color: #232a48;
+  opacity: 0.9;
+}
+
+/* spacing for repeated H1 sections */
+.submit_main h1:not(:first-child) {
+  margin-top: 2.25rem;
+}
+
+
+/* --- Submit Button --- */
+button[type="button"]{
+  background-color: #232a48;
+  color: #fff;
+  font-family: "Style Script", cursive;
+  font-size: 2vw;
+  padding: 1vw 2vw;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+button[type="button"]:hover {
+  background-color: #3b4163;
+}
+
+
+/* =======================
+   READ PAGE
+======================= */
+.read-title {
+  font-size: 5vw;
+  font-family: "Forum", serif;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  white-space: normal;
+  display: block;
+  color: #232a48;
+  text-shadow: 1vw 1vw 1.5vw rgba(231, 211, 190, 0.721);
+  width: 100vw;
+}
+
+.read-title h3 {
+  font-size: 2vw;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  text-shadow: 1vw 1vw 1.5vw rgba(231, 211, 190, 0.929);
+}
+
+.read_top {
+  background-image: url(images/street.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 50vw;
+}
+
+
+
+
+.read_section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  padding: 2vw;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #232a48; /* dark background */
+  color: white;              /* text is white */
+}
+
+.issue {
+  width: 20vw;        /* block width */
+  height: 30vw;
+  text-align: center;
+}
+
+.issue img {
+  width: 100%;
+  height: 20vw;
+  display: block;
+  border-radius: 0.5vw;
+  box-shadow: 0 0.5vw 1vw rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.issue img:hover {
+  transform: translateY(-5px);
+}
+
+/* Title */
+.issue h3 {
+  font-family: "Forum", serif;
+  font-size: 2vw;
+  color: white;
+  margin: 0.8rem 0 0.3rem;
+}
+
+/* Description */
+.issue p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+  color: white;
+}
+
+
+
+
+/* =======================
+   MASTHEAD
+======================= */
+.masthead_top {
+  background-image: url(images/starry_sky.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 50vw;
+}
+
+.masthead_title {
+  font-size: 3vw;
+  font-family: "Forum", serif;
+  font-style: normal;
+  text-align: center;
+  margin: 0;
+  white-space: normal;
+  display: block;
+  color: #232a48;
+  text-shadow: 1vw 1vw 1.5vw rgba(231, 211, 190, 0.721);
+  width: 100vw;
+}
+
+.role {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2vw;
+  padding: 2vw;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  width: 20vw;
+  height: auto;
+  padding: 1vw;
+  border-radius: 1vw;
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+}
+
+.person img {
+  width: 18vw;
+  border-radius: 1vw;
+}
+
+.person h2 {
+  color: black;
+  font-size: 1.2vw;
+  line-height: 1.5;
+  margin-top: 1vw;
+  font-family: "Forum", serif;
+  font-weight: 400;
+}
+
+.EIC {
+  background-image: url(images/nebula.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 70vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.marketing {
+  background-color: #cdc5df;
+  /* background-image: url(images/nebula.png);
+     background-size: cover;
+     background-position: top;
+     background-repeat: no-repeat; */
+  height: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.technical {
+  background-image: url(images/nebula.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+/* =======================
+   ABOUT
+======================= */
+.about_top {
+  background-image: url(images/snow_landscape.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 50vw;
+}/* Base stats styling (desktop/tablet) */
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* centers horizontally */
+}
+
+.stats h2 {
+  background-color: rgb(230, 217, 249);
+  text-align: center;
+  font-size: 2vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #232a48;
+  min-width: 10vw;
+  border-radius: 1vw;
+  padding: 1.5vw 2vw;
+  box-shadow: 0 0.5vw 1.5vw rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats h2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0.8vw 2vw rgba(0, 0, 0, 0.15);
+}
+
+.about_content h1 {
+  display: flex;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  font-size: 4vw;
+  margin-bottom: 3vw;
+  text-shadow: 1vw 1vw 1.5vw #d8d7dc;
+}
+
+.left {
+  text-align: left;
+  color: #232a48;
+  padding: 7vw 7vw 7vw 7vw;
+}
+
+.who_we_are {
+  text-align: left;
+  color: #232a48;
+  background-image: url(images/blue_cloud.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding: 7vw 7vw 7vw 7vw;
+}
+
+.who_we_are_content {
+  display: flex; /* was inline-block */
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.who_we_are_content h2 {
+  flex: 1; /* lets text share line with image */
+  margin: 0;
+}
+
+.who_we_are_content img {
+  width: 20vw; /* give it a size */
+  height: auto;
+  border-radius: 1vw;
+  object-fit: cover;
+}
+
+.our_story {
+  text-align: left;
+  color: #232a48;
+  background-image: url(images/pink_cloud.png);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 7vw;
+}
+
+/* --- Mission --- */
+.mission h1 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mission {
+  text-align: right;
+  color: #232a48;
+  background-image: url(images/fade_purple.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 7vw 7vw 7vw 7vw;
+}
+
+.mission_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2vw;
+}
+
+.mission h2 {
+  flex: 1;
+  margin: 0;
+}
+
+.mission img {
+  height: 20vw;
+  border-radius: 1vw;
+  object-fit: cover;
+}
+
+/* --- About Section Body Text (h2) --- */
+.about_content h2,
+.who_we_are_content h2,
+.our_story h2,
+.mission_content h2 {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 1.6;
+  color: black;
+  margin: 0;
+  text-shadow: 0.2vw 0.2vw 0.4vw rgba(216, 215, 220, 0.6);
+}
+
+
+/* =======================
+   SCROLL REVEAL
+======================= */
+.scroll-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+@media (max-width: 768px) {
+
+
+	/* ===== NAVBAR ===== */
+	.navbar {
+	width: 100%;
+	height: auto;
+	padding: 3.5vw 5vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; /* Changed from flex-start for vertical centering */
+	}
+
+	/* Fleur image aligned left */
+	.fleur-home {
+	width: auto;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	}
+
+	/* Fleur image sizing */
+	.fleur-home img {
+	width: 12vw;
+	height: 12vw;
+	}
+
+	/* Nav toggle aligned right */
+	.nav-toggle {
+	display: inline-flex;
+	margin-left: auto; /* Pushes it to the right */
+	align-items: center;
+	}
+
+  /* ===== HIDE DESKTOP NAV LINKS ===== */
+  nav .nav-links {
+    display: none !important;
+  }
+
+  /* ===== MOBILE NAV TOGGLE ===== */
+  .nav-toggle {
+    display: inline-flex;
+    margin-left: 2vw;
+  }
+
+  nav {
+    position: relative;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 4vw;
+    font-size: 4vw;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 4vw 6vw 6vw;
+    margin: 0;
+    background: #dbdadf;
+    backdrop-filter: blur(6px);
+    gap: 3.5vw;
+    border-radius: 0 0 3vw 3vw;
+    box-shadow: 0 2vw 4vw rgba(0,0,0,0.07);
+    z-index: 9999;
+  }
+
+  nav.is-open .nav-links {
+    display: flex;
+  }
+
+  .nav-links a,
+  .dropbtn {
+    font-size: 4.4vw;
+    text-align: left;
+    text-shadow: 0.6vw 0.6vw 0.6vw rgba(255,255,255,0.55);
+  }
+
+  /* ===== DETAILS-BASED DROPDOWN ===== */
+  .nav-dropdown {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-dropdown summary {
+    list-style: none;
+    background: #dbdadf;
+    color: #232a48;
+    border: 1px solid #dbdadf;
+    border-radius: 12px;
+    padding: 3.5vw 4vw;
+    font-family: "Forum", serif;
+    font-size: 4.4vw;
+    font-weight: 700;
+    box-shadow: 0 2vw 4vw rgba(0,0,0,0.05);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2.5vw;
+  }
+
+  .nav-dropdown summary::after {
+    content: "\25BE";
+    font-size: 4.4vw;
+    line-height: 1;
+  }
+
+  .nav-dropdown summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .nav-dropdown .menu-panel {
+    margin-top: 3vw;
+    padding: 3vw 3.5vw 4vw;
+    background: #dbdadf;
+    backdrop-filter: blur(6px);
+    border: 1px solid #e6dcd7;
+    border-radius: 12px;
+    box-shadow: 0 2vw 4vw rgba(0,0,0,0.07);
+  }
+
+  .nav-dropdown .menu-panel .nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5vw;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-dropdown .menu-panel a,
+  .nav-dropdown .menu-panel .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-family: "Forum", serif;
+    font-size: 4.2vw;
+    font-weight: 700;
+    color: #232a48;
+    text-decoration: none;
+    padding: 2.5vw 2.75vw;
+    border-radius: 10px;
+  }
+
+  /* ===== TOUCH-FRIENDLY DROPDOWN ===== */
+  .dropdown {
+    position: static;
+    width: 100%;
+  }
+
+  .dropbtn {
+    font-size: 4vw;
+    padding: 2vw 3vw;
+  }
+
+  .dropdown-content {
+    position: static;
+    display: none;
+    min-width: 100%;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding-top: 1vw;
+  }
+
+  .dropdown:hover .dropdown-content,
+  .dropdown:focus-within .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    background: #faf3f0;
+    border-radius: 2vw;
+    padding: 2.5vw 3vw;
+    font-size: 4.2vw;
+    margin: 1vw 0;
+    text-align: left;
+  }
+
+  /* Nested dropdown inside details */
+  .nav-dropdown .dropdown-content {
+    padding-top: 1.5vw;
+  }
+
+  .nav-dropdown .dropdown-content a {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 2.25vw 2.75vw;
+    font-size: 4.2vw;
+    margin: 1vw 0;
+  }
+
+  /* Ensure dropdown links are left-aligned */
+  .dropdown-content a,
+  .nav-dropdown .dropdown-content a {
+    text-align: left;
+    justify-content: flex-start;
+  }
+
+  /* Optional: remove any centering from parent containers */
+  .dropdown-content,
+  .nav-dropdown .menu-panel .nav-links {
+    align-items: flex-start;
+  }
+
+  /* TITLE BANNER + INTRO */
+  .title_text { display: block; }   /* override -moz-stack */
+  .title { flex-direction: column; align-items: center; gap: 4vw; }
+  .title img { width: 40vw; height: 40vw; padding-top: 4vw; }
+
+  .center-content { height: auto; padding: 8vw 8vw; }
+  .center-content h1 { font-size: 14vw; line-height: 1.05; padding: 0 4vw; }
+  .center-content p, .center-content h5 { font-size: 4.2vw; }
+
+   /* ===== BACKGROUND FIXES ===== */
+  .top, .read_top, .about_top {
+    background-attachment: scroll;
+  }
+  
+  /* Make each top banner a forgiving flex stack so text can center & breathe */
+  .about_top,
+  .read_top,
+  .masthead_top,
+  .submit_outer,
+  .title {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;     /* center items horizontally */
+    justify-content: center; /* center content vertically where applicable */
+    width: 100vw;        /*side padding to keep text off edges */
+    text-align: center;
+	padding-bottom: 20vw;
+  }
+
+  /* Target the subtitle lines that live in the “top boxes” */
+  :is(
+    .read-title h3,
+    .form-inner h3,
+    .masthead_title,
+    .about_content h2,
+    .who_we_are_content h2,
+    .our_story h2,
+    .mission_content h2
+  ) {
+    /* Let subtitles expand across the viewport with comfy side gutters */
+    width: min(92vw, 48rem);
+    max-width: 100%;
+    margin: 0 auto;
+
+    /* Better wrapping & balance for 2–3 line subtitles */
+    line-height: 1.45;
+    word-break: normal;
+    overflow-wrap: anywhere; /* avoids overflow on long words/names */
+    hyphens: auto;
+
+    /* Modern, nicer line breaking where supported */
+    text-wrap: balance; /* safely ignored by older browsers */
+
+    /* Slightly soften the look on busy images */
+    text-shadow: 0.6vw 0.6vw 1vw rgba(216,215,220,0.6);
+  }
+
+  /* ===== GENERAL PADDING ===== */
+  .left, .who_we_are, .our_story, .mission,
+  .announcements, .features, .form, .issues {
+    padding-left: 8vw !important;
+    padding-right: 8vw !important;
+  }
+
+  /* Subtitles readable + centered on stack */
+  .center-content p,
+  .center-content h5,
+  .read-title h3,
+  .form-inner h3,
+  .masthead_title,
+  .about_content h2,
+  .who_we_are_content h2,
+  .our_story h2,
+  .mission_content h2 {
+    max-width: 28ch;
+    text-align: center;
+    line-height: 1.45;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* <-- not center; lets children fill width */
+    padding: 10vw 10vw;
+  }
+
+  .stats h2 {
+    width: 70%;
+    max-width: none;               /* kill the cap */
+    font-size: 3vw;
+    border-radius: 3vw;
+    box-shadow: 0 1vw 3vw rgba(0,0,0,0.12);
+  }
+
+  .announcements { padding: 10vw 5vw; background-position: center top; }
+  .announcements h1 { padding-left: 0; font-size: 8vw; margin-bottom: 6vw; }
+  .announcement_content { padding-left: 0; flex-direction: column; align-items: center; gap: 4vw; }
+  .event { width: 90%; padding: 4vw; border-radius: 3vw; box-shadow: 0 2vw 4vw #d8d7dc; }
+  .event img { width: 100%; border-radius: 2vw; }
+
+  .features { text-align: center; padding: 10vw 5vw; background-position: center top; }
+  .features h1 { padding-right: 0; font-size: 8vw; margin-bottom: 6vw; text-shadow: 1.5vw 1.5vw 2.5vw #232a48; }
+  .features_content { padding-right: 0; flex-direction: column; align-items: center; gap: 4vw; }
+  .work { width: 90%; padding: 4vw; border-radius: 3vw; box-shadow: 0 2vw 4vw #d8d7dc; }
+  .work img { width: 100%; border-radius: 2vw; }
+
+  .submit_outer { height: auto; padding: 4vw 0; }
+  .submit_inner { height: auto; width: 92%; padding: 4vw 3vw; font-size: 6vw; text-align: center; border-radius: 2vw; }
+
+  /* hero a bit taller on mobile for legibility */
+  .submit_top {
+    height: 110vw;
+  }
+
+  /* page margins tighter on small screens */
+  .submit_main {
+    margin-left: 6vw;
+    margin-right: 6vw;
+    margin-top: 8vw;
+    margin-bottom: 10vw;
+  }
+
+  /* type scales up slightly for readability */
+  .submit_main h1 { font-size: 6.4vw; line-height: 1.2; }
+  .submit_main h2 { font-size: 4.8vw; line-height: 1.3; margin: 4vw 0 2vw 0; }
+  .submit_main h3 { font-size: 3.8vw; line-height: 1.7; margin: 0 0 5vw 0; }
+
+  /* buttons: big tap targets, full width under text */
+  button[type="button"] {
+    font-size: 4.6vw;
+    padding: 2.6vw 4.6vw;
+    border-radius: 10px;
+    align-self: stretch;   /* lets it fill width if inside a flex column */
+    width: 100%;           /* ensure full width when placed under paragraph */
+  }
+
+
+  .read-title { font-size: 10vw; padding: 0 4vw; }
+  .read-title h3 { font-size: 4.5vw; }
+  .read_top { height: 70vw; }
+  .read_section {
+    flex-direction: column;   /* stack vertically */
+    align-items: center;      /* optional: center them, or use flex-start for left align */
+    gap: 6vw;                 /* spacing between issues */
+  }
+
+  .issue img {
+    width: 80vw;
+    height: 80vw;
+  }
+
+  .issue {
+    width: 80vw;              /* take most of screen width */
+    height: auto;
+    max-width: 400px;         /* optional cap so it doesn’t get too huge */
+  }
+  .issue h3{
+    font-size: 5vw;
+  }
+
+  .masthead_top { height: 70vw; }
+  .masthead_title { font-size: 3vw; }
+  .role { gap: 4vw; padding: 4vw; }
+  .person { width: 86vw; padding: 4vw; border-radius: 3vw; }
+  .person img { width: 100%; border-radius: 2vw; }
+  .person h2 { font-size: 4vw; margin-top: 3vw; }
+  .EIC, .marketing, .technical { height: auto; padding: 8vw 0; }
+
+  .about_top { height: 100vw; width: 100vw;}
+  .stats h2 { font-size: 4vw; min-width: auto; padding: 4vw 4vw; border-radius: 3vw; }
+  .about_content h1 { font-size: 8vw; margin-bottom: 6vw; padding: 0 4vw; }
+
+  .left, .who_we_are, .our_story, .mission { text-align: left; }
+  .who_we_are_content, .mission_content { flex-direction: column; align-items: flex-start; }
+  .who_we_are_content img, .mission img { width: 100%; height: auto; border-radius: 2.5vw; }
+
+  .about_content h2, .who_we_are_content h2, .our_story h2, .mission_content h2 {
+    font-size: 4vw; line-height: 1.6; text-shadow: 0.6vw 0.6vw 1vw rgba(216,215,220,0.6);
+  }
+  .mission h1 { justify-content: flex-start; }
+
+  .footer { height: auto; padding: 6vw 0; }
+  .footer_links { width: 90%; flex-direction: column; align-items: center; gap: 3vw; }
+  .footer a { font-size: 4vw; }
+
+
+
+
+
+
+
+  /* 1) Top/hero blocks: use 100% (not 100vw) so text can't overshoot */
+  .top,
+  .read_top,
+  .about_top,
+  .masthead_top,
+  .title,
+  .submit_outer,
+  .footer {
+    width: 100% !important;
+  }
+
+  /* 2) Constrain the masthead/read titles to the page box */
+  .masthead_title,
+  .read-title,
+  .read-title h3 {
+    width: 100% !important;
+    max-width: 92vw;                 /* comfy gutters */
+    margin-inline: auto;
+    overflow-wrap: break-word;       /* long names won’t push width */
+    word-break: normal;
+    hyphens: auto;
+  }
+}

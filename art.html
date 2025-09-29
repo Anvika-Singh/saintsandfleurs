@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Saints and Fleurs</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/fleur.png" />
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Forum&family=Style+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class = "art_page">
+     <!--NAVBAR-->
+    <div class="navbar">
+      <a href="index.html" class="fleur-home">
+          <img src="images/fleur.png" alt="Home" />
+      </a>
+      <nav>
+      <div class="nav-links">
+            <div class="dropdown">
+              <button class="dropbtn">submit</button>
+                <div class="dropdown-content">
+                  <a href="literature.html">literature</a>
+                  <a href="art.html">art</a>
+              </div>
+          </div>
+          <a href="read.html">read</a>
+          <a href="masthead.html">masthead</a>
+          <a href="about.html">about</a>
+      </div>
+      </nav>
+    </div>
+
+  <div class="form-title scroll-reveal">
+    <h1>SUBMIT ART</h1>
+  </div>
+
+  <div class="form scroll-reveal">
+    <form id="artSubmissionForm" enctype="multipart/form-data">
+    <div class = "form-inner">
+      <h1>INSTRUCTIONS:</h1>
+        <h3>
+        We welcome Art submissions for SaintsandFleurs! We appreciate your effort!
+        <br>
+        <br>
+        Art Submissions:
+        <br>
+        Art submission cycles last two weeks (next open for the Issue 2 Cover from 10/1 - 10/14).
+        We select an art piece to be featured on the cover of the issue. This piece will appear permanently
+         on the website as the cover for the Issue.
+         <br>
+         Several other pieces will be selected for featured works and to appear throughout the magazine.
+         <br>
+        <br>
+        Contact us for questions!
+        </h3>
+        <h1>SUBMIT TO ISSUE 2</h1>
+        <h3>
+        We are currently accepting submissions works of art. 
+        <br>
+        Theme: Haunted
+        <br>This cycle's submission deadline is September 30th, 2025 at 
+         11:59 P.M. Pacific Standard Time. 
+        </h3>
+      
+      <!-- Required info -->
+      <input type="text" id="artName" placeholder="Full Name" required />
+      <input type="email" id="artEmail" placeholder="Preferred Email" required />
+      <input type="number" id="artAge" placeholder="Age" required />
+      <input type="text" id="artSchool" placeholder="School/Institution" required />
+      <input type="text" id="artCountry" placeholder="Country" required />
+
+      <!-- Work info -->
+      <input type="text" id="artTitle" placeholder="Name of Work" required />
+
+      <!-- Image upload -->
+      <label for="artFile">Attach Image of Work:</label>
+      <input type="file" id="artFile" accept="image/*" required />
+
+      <!-- Optional social -->
+      <input type="text" id="artInstagram" placeholder="Instagram @ (Optional)" />
+
+      <!-- Short bio -->
+      <textarea id="artBio" placeholder="Short Third-Person Bio (50 words or less)" required></textarea>
+
+      <button type="submit">Submit</button>
+    </div>
+    </form>
+</div>
+
+  <div class = "footer">
+    <div class = "footer_links">
+      <a href = "https://www.instagram.com/saintsandfleurs?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="> instagram</a>
+      <a href="mailto:saintsandfleurs@gmail.com">email</a>
+      <a href="https://linktr.ee/saintsandfleurs">linktree</a>
+    </div>
+  </div>
+
+</body>
+</html>
